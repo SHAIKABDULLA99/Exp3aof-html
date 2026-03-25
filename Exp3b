@@ -1,1 +1,15 @@
-
+<html>
+<body>
+<h1>Embedding Audio and Video in HTML</h1>
+<h2>Audio</h2>
+<audio controls>
+<source src="audio.mp3" type="audio/mpeg">
+<source src="audio.ogg" type="audio/ogg">
+</audio>
+<h2>Video Example</h2>
+<video width="400" controls>
+<source src="video.mp4" type="video/mp4">
+<source src="video.ogg" type="video/ogg">
+</video>
+</body>
+</html>
