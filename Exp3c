@@ -1,31 +1,54 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
- <title>CSS: Inline, Internal, External Styles</title>
- <link rel="stylesheet" href="styles.css">
- <style>
- body {
- font-family: Arial, sans-serif;
- background-color: #f0f0f0;
- }
- h1 {
- color: #333;
- text-align: center;
- }
- .internal-style {
- color: blue;
- font-size: 20px;
- }
- </style>
+    <meta charset="UTF-8">
+    <title>CSS Styles Example</title>
+
+    <!-- 1. EXTERNAL STYLE: Linked via the <link> tag -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- 2. INTERNAL STYLE: Defined within <style> tags in the <head> -->
+    <style>
+        /* Selector: h2 | Property: color | Value: darkblue */
+        h2 {
+            color: darkblue;
+            text-decoration: underline;
+        }
+
+        /* Selector: .internal-p (class) | Property: font-weight | Value: bold */
+        .internal-p {
+            font-weight: bold;
+            background-color: #f0f0f0;
+        }
+    </style>
 </head>
 <body>
- <!-- Inline Styles -->
- <h1 style="color: red; font-size: 30px;">This is styled using Inline CSS</h1>
- <p class="internal-style">This paragraph is styled using Internal CSS.</p>
- <p class="external-style">This paragraph is styled using External CSS.</p>
+
+    <!-- EXTERNAL STYLE DEMO -->
+    <h1>This heading is styled by an External CSS file.</h1>
+
+    <!-- INTERNAL STYLE DEMO -->
+    <h2>This heading is styled by Internal CSS.</h2>
+    <p class="internal-p">This paragraph uses an internal class selector.</p>
+
+    <!-- 3. INLINE STYLE: Applied directly to the element using the 'style' attribute -->
+    <!-- Selector: p (Implicit) | Property: color | Value: red -->
+    <p style="color: red; font-size: 20px;">
+        This paragraph is styled using <strong>Inline CSS</strong>.
+    </p>
+
 </body>
 </html>
-.external-style {
- color: green;
- font-size: 18px;
- font-weight: bold;
+<!--css-->
+/* Selector: h1 */
+h1 {
+    color: green;        /* Property: color | Value: green */
+    font-family: Arial;  /* Property: font-family | Value: Arial */
+    text-align: center;  /* Property: text-align | Value: center */
+}
+
+/* Selector: body */
+body {
+    background-color: #fafafa;
+    line-height: 1.6;
 }
