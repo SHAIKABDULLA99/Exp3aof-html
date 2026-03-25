@@ -1,0 +1,31 @@
+<html>
+<head>
+ <title>CSS: Inline, Internal, External Styles</title>
+ <link rel="stylesheet" href="styles.css">
+ <style>
+ body {
+ font-family: Arial, sans-serif;
+ background-color: #f0f0f0;
+ }
+ h1 {
+ color: #333;
+ text-align: center;
+ }
+ .internal-style {
+ color: blue;
+ font-size: 20px;
+ }
+ </style>
+</head>
+<body>
+ <!-- Inline Styles -->
+ <h1 style="color: red; font-size: 30px;">This is styled using Inline CSS</h1>
+ <p class="internal-style">This paragraph is styled using Internal CSS.</p>
+ <p class="external-style">This paragraph is styled using External CSS.</p>
+</body>
+</html>
+.external-style {
+ color: green;
+ font-size: 18px;
+ font-weight: bold;
+}
